@@ -1,0 +1,17 @@
+[package]
+name = "hailstone"
+version = "0.0.1"
+edition = "2021"
+description = "A hailstone sequence generator"
+license = "MIT OR Apache-2.0"
+
+[[bin]]
+name = "hailstone"
+path = "src/main.rs"
+
+[lib]
+name = "hailstone"
+path = "src/lib.rs"
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
